@@ -1,0 +1,18 @@
+// schema.prisma
+generator client {
+  provider = "prisma-client-js"
+  previewFeatures = ["driverAdapters"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+  relationMode = "foreignKeys"
+}
+
+model Quote {
+  id        String     @default(cuid()) @id
+  d1Id      Int
+  content   String
+  userId  String
+}

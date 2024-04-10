@@ -1,0 +1,8 @@
+name = "chattr-worker"
+main = "src/index.ts"
+compatibility_date = "2024-02-08"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "chattr-quotes"
+database_id = "bfd0634c-f98e-4568-bccb-bc0bf2865813"
