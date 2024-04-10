@@ -1,6 +1,6 @@
 "use client";
 
-import React, {useState, useEffect, useId} from "react";
+import React, {useState, useEffect} from "react";
 import axios from "axios";
 import { HiLanguage } from "react-icons/hi2";
 import { IoArrowBack } from "react-icons/io5";
@@ -54,6 +54,14 @@ export default function TranslationPage({params}:{params:{tags: string}}){
                     <div className="flex flex-col items-center">
                         <p className="p-10 text-2xl font-black text-white">{mainQuote ? mainQuote.tagalog:"Lorem ipsum dolor sit amet, ut labore et dolore magna."}</p>
                         <button onClick={()=>addQuote(mainQuote.tagalog, mainQuote.id )}><FaHeart className="text-2xl text-white"/></button>
+                    </div>
+                    <p className="text-white p-3"></p>
+                </div>
+                <div className="flex flex-col justify-between items-center h-full w-full shrink-0 snap-center">
+                    <p className="self-end text-white p-6"><HiLanguage className="inline-block"/> Fijian</p>
+                    <div className="flex flex-col items-center">
+                        <p className="p-10 text-2xl font-black text-white">{mainQuote ? mainQuote.fijian:"Lorem ipsum dolor sit amet, ut labore et dolore magna."}</p>
+                        <button onClick={()=>addQuote(mainQuote.fijian, mainQuote.id )}><FaHeart className="text-2xl text-white"/></button>
                     </div>
                     <p className="text-white p-3"></p>
                 </div>

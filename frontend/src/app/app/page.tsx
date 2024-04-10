@@ -61,6 +61,14 @@ export default function Home(){
                         </div>
                         <p className="text-white p-3"></p>
                     </div>
+                    <div className="flex flex-col justify-between items-center h-full w-full shrink-0 snap-center p-6">
+                        <p className="self-end text-white"><HiLanguage className="inline-block"/> Fijian</p>
+                        <div className="flex flex-col items-center">
+                            <p className="p-10 text-2xl font-black text-white">{mainQuote ? mainQuote.fijian:"Lorem ipsum dolor sit amet, ut labore et dolore magna."}</p>
+                            <button onClick={()=>addQuote(mainQuote.fijian, mainQuote.id )}><FaHeart className="text-2xl text-white"/></button>
+                        </div>
+                        <p className="text-white p-3"></p>
+                    </div>
                 </div>
             </div>
             <div className="h-screen snap-center"> 

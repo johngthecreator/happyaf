@@ -35,6 +35,11 @@ export default function SharePage({params}:{params:{id: string}}){
                     <p className="p-10 text-2xl font-black text-white">{mainQuote ? mainQuote.tagalog:"Lorem ipsum dolor sit amet, ut labore et dolore magna."}</p>
                     <p className="text-white p-3"></p>
                 </div>
+                <div className="flex flex-col justify-between items-center h-full w-full shrink-0 snap-center">
+                    <p className="self-end text-white p-6"><HiLanguage className="inline-block"/> Fijian</p>
+                    <p className="p-10 text-2xl font-black text-white">{mainQuote ? mainQuote.fijian:"Lorem ipsum dolor sit amet, ut labore et dolore magna."}</p>
+                    <p className="text-white p-3"></p>
+                </div>
             </div>
         </div>
     )
