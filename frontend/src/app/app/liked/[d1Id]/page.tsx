@@ -31,7 +31,7 @@ export default function LikeQuotePage({params}:{params:{d1Id: string}}){
                     </div>
                     <div className="flex flex-col items-center">
                         <p className="p-10 text-2xl font-black text-white">{mainQuote ? mainQuote.quote:"Lorem ipsum dolor sit amet, ut labore et dolore magna."}</p>
-                        <button onClick={()=>shareQuote(`${process.env.NEXT_PUBLIC_SHARE_URL}/share?id=${mainQuote.id}`)}><IoShareOutline className="text-white text-2xl" /></button>
+                        <button onClick={()=>shareQuote(`${process.env.NEXT_PUBLIC_SHARE_URL}/share/${mainQuote.id}`)}><IoShareOutline className="text-white text-2xl" /></button>
                     </div>
                     <p className="text-white p-3"></p>
                 </div>
@@ -39,7 +39,7 @@ export default function LikeQuotePage({params}:{params:{d1Id: string}}){
                     <p className="self-end text-white p-6"><HiLanguage className="inline-block"/> Tagalog</p>
                     <div className="flex flex-col items-center">
                         <p className="p-10 text-2xl font-black text-white">{mainQuote ? mainQuote.tagalog:"Lorem ipsum dolor sit amet, ut labore et dolore magna."}</p>
-                        <button onClick={()=>shareQuote(`${process.env.NEXT_PUBLIC_SHARE_URL}/share?id=${mainQuote.id}`)}><IoShareOutline className="text-white text-2xl" /></button>
+                        <button onClick={()=>shareQuote(`${process.env.NEXT_PUBLIC_SHARE_URL}/share/${mainQuote.id}`)}><IoShareOutline className="text-white text-2xl" /></button>
                     </div>
                     <p className="text-white p-3"></p>
                 </div>
